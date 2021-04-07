@@ -6,25 +6,21 @@
 
  require('./bootstrap');
 
- window.Vue = require('vue');
-
- import Vue from 'vue/dist/vue'
-
  window.Vue = Vue
  
- 
+
+
+ import Vue from 'vue/dist/vue'
  import VueAxios from 'vue-axios';
  import VueRouter from 'vue-router';
  import axios from 'axios';
  import { routes } from './routes';
  import VueMoment from 'vue-moment'
  import moment from 'moment-timezone'
- 
-
-
-
-
  import Swal from 'sweetalert2';
+
+
+
  //---------------------ALERT INSERT REALIZADO---------------------------------
  const Toast = Swal.mixin({
     toast: true,
@@ -36,9 +32,7 @@
 
   window.Toast=Toast;
 
-
-  //---------------------ALERT INSERT REALIZADO fin---------------------------------
-
+  //--------------------ALERT INSERT REALIZADO fin---------------------------------
 
 
   Vue.use(VueRouter);
@@ -53,14 +47,13 @@
       routes: routes
   });
 
- const app = new Vue({
-     el: '#app',
-     router: router,
+
+
+ new Vue({
+  
     
- });
-
-
-
+    router: router,
+  }).$mount('#app')
 
 
 

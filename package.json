@@ -23,9 +23,10 @@
     "vue-axios": "^3.2.4",
     "vue-moment": "^4.1.0",
     "vue-router": "^3.5.1",
-    "vuetify": "^2.4.0"
+    "vuetify": "^2.4.9"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3",
     "axios": "^0.21",
     "bootstrap": "^4.0.0",
     "jquery": "^3.2",

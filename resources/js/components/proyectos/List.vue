@@ -1,4 +1,3 @@
-
 <template>
   <main>
     <div class="container mt-5">
@@ -50,12 +49,14 @@
 <script>
 
 var now = moment();
+moment.locale('eu');
 var monday = now.clone().weekday(1);
 var friday = now.clone().weekday(5);
 
 
 
 import moment from 'moment';
+import 'moment/locale/eu';
 
 export default {
 
@@ -106,7 +107,7 @@ export default {
   },
 
  
-       
+ 
     }
      
 </script>
